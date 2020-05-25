@@ -1,13 +1,132 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+	font-family: sans-serif;
 }
+
+.cold{
+	background-image: url('./assets/cold.jpg');
+	background-size: cover;
+	background-position: bottom;
+	transition: 0.5s ease;
+}
+
+.hot{
+	background-image: url('./assets/hot.jpg');
+	background-size: cover;
+	background-position: bottom;
+	transition: 0.5s ease;
+}
+
+main{
+	min-height: 100vh;
+	padding : 25px;
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.25),rgba(0,0,0,0.5))
+}
+
+.search-box{
+	width: 100%;
+	margin: 0 0 75px;
+}
+
+
+.search-box .search-bar{
+	display: block;
+	width: 100%;
+	padding: 20px;
+
+	appearance: none;
+	background : none;
+	border: none;
+	outline: none;
+
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 15px 15px 15px 15px;
+
+	box-shadow: 0px 5px rgba(0,0,0,0.2);
+
+	color: #000000;
+	font-size: 20px;
+	font-weight: bold;
+
+	transition: 0.5s ease-out;
+}
+
+.seacrh-box .search-bar:focus{
+	background-color: rgba(255,255,255,0.75);
+}
+
+.location-box .location{
+	display: inline-block;
+	width: 350px;
+	margin-left: 280px;
+	margin-bottom: 100px;
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 15px;
+
+	padding: 20px;
+
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: 750;
+	text-align:center;
+	text-shadow: 2px 2px rgba(50,50,50,0.5);
+}
+
+.location-box .date{
+	display: inline-block;
+	width: 350px;
+	margin-left: 320px;
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 15px;
+
+	padding: 20px;
+
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: 750;
+	text-align:center;
+	text-shadow: 2px 2px rgba(50,50,50,0.5);
+}
+
+.weather-box{
+	text-align: center;
+}
+
+.weather-box .temperature{
+	display: inline-block;
+	width: 350px;
+	margin-left: 275px;
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 15px;
+
+	padding: 20px;
+
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: 750;
+	text-align:center;
+	text-shadow: 2px 2px rgba(50,50,50,0.5);
+}
+
+.weather-box .weather{
+	display: inline-block;
+	width: 350px;
+	margin-left: 320px;
+	margin-right: 350px;
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 15px;
+
+	padding: 20px;
+
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: 750;
+	text-align:center;
+	text-shadow: 2px 2px rgba(50,50,50,0.5);
+}
+
